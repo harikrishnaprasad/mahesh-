@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mahesh</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<header>
+   <div class="container1">
+      <!--start title-->
+      <h1 class="fontface" id="title"><span class="orange">M</span><span class="pink">a</span><span class="purple">h</span><span class="blue ">e</span><span class="green ">sh</span></h1>
+      <!--end title-->
+      <!--start menu-->
+      <nav>
+      <ul>
+      <li><%= link_to "Home",mahesh_home_path %></li>
+      <li><%= link_to "Nenokkadine",mahesh_nenokkadine_path %></li>
+      <li><%= link_to "Gallery",mahesh_gallery_path %></li>
+      <li><%= link_to "Videos",mahesh_videos_path %></li>
+      <li><%= link_to "Login",mahesh_login_path %></li>
+      </ul>
+      </nav>
+   </div>
+   <div class="bottom"> </div>
+   <!--end menu-->
+   <!--end header-->
+</header>
+
+<%= yield %>
+<div id="container">
+   <!--start intro-->
+   <section id="intro">
+     <div class="quote">
+      <section class="welcome">
+      <h2 class="fontface"> <span class="pink medium">100% Wild </span><span class="green small rotate">and </span>Crazy<span class="orange medium"> Grunge</span></h2> 
+     </div>
+   </section>
+   <!--end intro-->
+   
+      
+
+   <section id="main">
+      <div class="portfolio">
+      <h2 class="fontface"> <span class="orange ">Gal</span><span class="pink">lery</span></h2> 
+       </div>
+      <br><br>
+      <ul class="gallery">
+      <li><%= image_tag "11.jpg" %></li>
+      <li><%= image_tag "9.jpg" %></li>
+      <li><%= image_tag "4.jpg" %></li>
+      <li><%= image_tag "7.jpg" %></li>
+      <li><%= image_tag "5.jpg" %></li>
+      <li><%= image_tag "6.jpg" %></li>
+      <li><%= image_tag "3.jpg" %></li>
+      <li><%= image_tag "1.jpg" %></li>
+      </ul>
+      </section>
+   </div>
+
+ <footer>
+
+   <div class="container1">
+     <p> Copyright © 2013 | Developed by Harikrishna</p> 
+   </div>
+   
+   </footer>
+</body>
+</html>
